@@ -1,0 +1,29 @@
+/* Add your custom styles here */
+.needs-validation input:invalid {
+    border-color: #dc3545;
+}
+
+.needs-validation input:valid {
+    border-color: #28a745;
+}
+
+.invalid-feedback {
+    display: block;
+}
+/* Add your custom styles here */
+
+body {
+    padding-top: 56px; /* Adjusted for the fixed navbar */
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 76px; /* Adjusted for the fixed navbar with expanded dropdown */
+    }
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+}

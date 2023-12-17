@@ -1,0 +1,24 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... (head content) -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+<!-- ... (existing content) -->
+<div class="text-center mt-3">
+  <div class="g-signin2" data-onsuccess="onGoogleSignIn"></div>
+</div>
+<!-- ... (existing content) -->
+<script>
+  function onGoogleSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      var email = profile.getEmail();
+      // Send the 'email' to your server for authentication
+      // You can use AJAX or other methods to make an API call to your Java controller
+      // Example: $.post("/api/googleSignIn", { email: email }, function(data) {...});
+  }
+</script>
+</body>
+</html>
